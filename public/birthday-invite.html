@@ -7,22 +7,39 @@
 </head>
 <body>
     <div class="content-wrapper">
-        <h1>Its my Birthday</h1>
-        <h2>On the 14th of May</h2>
+        <h1>Its My Birthday</h1>
+        <h2>On the 16th of April</h2>
         <hr width="500"/>
 
         <a href="">
-            <img src="https://raw.githubusercontent.com/appbrewery/webdev/main/birthday-cake3.4.jpeg" 
-            alt="Birthday cake - Image">
+            <img src="../assets/images/birthday-cake.jpg" 
+            alt="Birthday cake - Image" height="350" width="350">
         </a>
 
-        <h3>What to bring:
+        
         <div class="list-wrapper">
-            <ul>
-                <li>Hopfully a card</li>
-                <li>Maybe a present</li>
-                <li>Your self offcours</li>
-            </ul>
+            
+            <table class="content-table">
+                <tr>
+                    <td id="table-header">What to bring:</td>
+                </tr>
+                <tr>
+                    <td>
+                        Hopfully a card
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Maybe a present
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Your self offcours
+                    </td>
+                </tr>
+            </table>
+
         </div>            
         </h3>
 
@@ -38,12 +55,18 @@
         h1{
             text-decoration: underline;
         }
+        #table-header{
+            text-align: left;
+            font-size: large;
+            font-weight: bolder;
+        }
         .content-wrapper{
             text-align: center;
         }
-        .list-wrapper{
-            list-style-position: inside;
-            
+        .content-table{
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
         }
         a{
             color: black;
