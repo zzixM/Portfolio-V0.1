@@ -7,49 +7,69 @@
     <title>Awack - The Discord Bot</title>
 </head>
 <body>
-    
-    <h1>Project: Awack</h1>
-    <h2>A Multi purpose Discord Bot to automate servers</h2>
-    <hr width="100%"/>
+    <div class="container">
+        <div class="card">
+            <h1>Project: Awack</h1>
+            <h2>A Multi purpose Discord Bot to 
+                <br />automate servers</h2>
+            <hr />
+        </div>
+        <div class="card">
+            <h3>The Aim of the project</h3>
+            <p>
+            This is the longest Project I have worked on and likely the most code heavy system I hame created.
+            When I started the project Awack I did not have such a large vision for the bot originally it
+            was just going to reply with funny things and maybe sheare invites to servers I was in.
+            This was untill I realised how large the Python Library "Discord.py" actually was and
+            what you can automate with it.
+            </p>    
+            <img src="../assets/images/awack-help-menu.png" alt="Awack Help Command - Image" height="320"
+            width="400">
 
-    <h3>The Aim of the project</h3>
-    <p>
-        This is the longest Project I have worked on and likely the most code heavy system I hame created.
-        When I started the project Awack I did not have such a large vision for the bot originally it
-        was just going to reply with funny things and maybe sheare invites to servers I was in.
-        This was untill I realised how large the Python Library "Discord.py" actually was and
-        what you can automate with it.
-    </p>
-    <img src="../assets/images/awack-help-menu.png" alt="Awack Help Command - Image" height="320"
-    width="400">
-    
-    <h3>The Implimentation</h3>
-    <p>
-        Curently the Awack Bot has over 30 commands and will only grow as I work on it more.
-        When i first started to learn the "Discord.py" Library I found it hard as working with
-        Asynchronous functions was completly new to me. Although the Learning curve was large I 
-        quickly got the handle of it and started to come up with lots of new ideas on what I could
-        add to the bot. Curently the system Can not only interat with discord but also Post on its 
-        <a href="https://twitter.com/AwackTeam">Twitter</a>
-        and pull Gifs from <a href="https://giphy.com/">Giphy.com</a> but also play games
-        and other cool things.
-    </p>
-    <img src="../assets/images/awack-info.png" alt="Awack Info Command - Image"
-    height="300" width="400">
-    
-    <h3>How its turned out</h3>
-    <p>
-        This project isnt completed yet and isnt running unless I host it locally which I only do at the moment
-        to add new features or fix bugs but hopfully in the future I will publish the bot to the public.
-        Id like to make some more commands dealing with the Twitter API but for now I think the Bot has been a huge
-        success and am very proud of the code aswell as the Bots functionality in servers. 
-        if youd like to add the bot to your surver thr link is
-        <a href="https://discord.com/api/oauth2/authorize?client_id=938071040544878593&permissions=8&scope=bot">here.</a>
-    </p>
-    <hr width="100%"/>
-    <p id="footer-home"><a id="footer-home-link" href="../index.html">Click here to go home</a></p>
+        </div>
+        <div class="card">
+            <h3>The Implimentation</h3>
+            <p>
+            Curently the Awack Bot has over 30 commands and will only grow as I work on it more.
+            When i first started to learn the "Discord.py" Library I found it hard as working with
+            Asynchronous functions was completly new to me. Although the Learning curve was large I 
+            quickly got the handle of it and started to come up with lots of new ideas on what I could
+            add to the bot. Curently the system Can not only interat with discord but also Post on its 
+            <a href="https://twitter.com/AwackTeam">Twitter</a>
+            and pull Gifs from <a href="https://giphy.com/">Giphy.com</a> but also play games
+            and other cool things.
+            </p>
+            <img src="../assets/images/awack-info.png" alt="Awack Info Command - Image"
+            height="300" width="400">
+        </div>
+        <div class="card">
+            <h3>How its turned out</h3>
+            <p>
+            This project isnt completed yet and isnt running unless I host it locally which I only do at the moment
+            to add new features or fix bugs but hopfully in the future I will publish the bot to the public.
+            Id like to make some more commands dealing with the Twitter API but for now I think the Bot has been a huge
+            success and am very proud of the code aswell as the Bots functionality in servers. 
+            if youd like to add the bot to your surver thr link is
+            <a href="https://discord.com/api/oauth2/authorize?client_id=938071040544878593&permissions=8&scope=bot">here.</a>
+            </p>
+            <hr />
+            <p id="footer-home"><a id="footer-home-link" href="../index.html">Click here to go home</a></p>
+        </div>
+    </div>
     
     <style>
+        
+        
+        .container{
+            display: flex;
+            align-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            
+        }       
+        .card p{
+            width: 400px;
+        }
         #footer-home{
             text-align: center;
         }
@@ -57,6 +77,21 @@
             color: black;
             font-size: 1.5rem;
         }
+        @media (max-width: 600px) {
+            .container{
+            display: flex;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            flex-direction: column;
+            }
+            .card p{
+            width: 70%;
+            }
+            .card img{
+                width: 70%;
+            }
+        }
+
     </style>
 
 </body>
