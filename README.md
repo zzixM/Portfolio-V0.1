@@ -4,4 +4,5 @@ this site is not intended to be my offical portfolio just my
 first attempts at making one look nice. 
 
 Curent goal:
-responsiveness - I am learning media queries curently  
+responsiveness - I am learning media queries 
+                and flexbox curently
