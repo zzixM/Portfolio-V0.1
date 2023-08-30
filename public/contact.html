@@ -4,41 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Me</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="content-wrapper">
 
-    <h1>Contact Me</h1>
-    <hr width="100%"/>
-
-    <p>Tel: +44 (0) 7518819238</p>
-    <p><a href="https://gmail.com">Email: baileyrosswray@gmail.com</a></p>
-    <p>Links:
+    <div class="card header-content">
+      <h1>Contact Me</h1>
+      <hr />
+    </div>
+    <div class="card content">
+      
+      <p>Tel: +44 (0) 7518819238</p>
+      <p><a href="https://gmail.com">Email: baileyrosswray@gmail.com</a></p>
+      <p>Links:
       <ul>
         <li id="list-item-one"><a href="https://github.com/zzixM">My Github</a></li>
         <li><a href="https://twitter.com/AwackTeam">My Discord Bots Twitter</a></li>
       </ul>
     </p>
-    <hr width="100%"/>
     
-  </div>
-  <footer>
-    <a id="home-link" href="../index.html">Home</a>
-  </footer>
+    </div>
+    <div class="card footer-content">
+      <hr />
+      <a id="home-link" href="../index.html">Home</a>
+    </div>
 
   <style>
+    body{
+      font-family: 'Lato', sans-serif;
+    }
+
     .content-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-content: center;
+      gap: 10px;
+    }
+    .card{
+      flex: 1;
+      min-width: 25%;
+      font-weight: 600;
+    }
+    .header-content{
       text-align: center;
     }
-    ul{
-      list-style-position: inside;
+    .content{
+      text-align: left;
     }
-    #list-item-one{
-      margin-right: 89px;
+    .content > ul{
+      list-style: none;
     }
+    .footer-content{
+      text-align: center;
+      
+    }
+
     #home-link{
-      position: relative;
-      left: 50%;
       color: black;
       font-size: 1.5rem;
     }
