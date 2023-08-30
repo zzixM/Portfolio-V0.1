@@ -5,9 +5,9 @@ first attempts at making one look nice.
 
 I will be updating pages soon to be resposive.
 
-Planed responsive nece page update:
-- Contact page 
-
 Curent goal:
 responsiveness - I am learning Media queries 
                 and Flexbox curently and Grid
+
+Planed responsiveness page update:
+- password gen project
