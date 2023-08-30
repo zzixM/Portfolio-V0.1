@@ -9,5 +9,5 @@ Curent goal:
 responsiveness - I am learning Media queries 
                 and Flexbox curently and Grid
 
-Planed responsiveness page update:
-- password gen project
+Planned responsiveness page update:
+- index (going to add a grid display)
