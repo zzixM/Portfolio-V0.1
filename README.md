@@ -10,4 +10,4 @@ responsiveness - I am learning Media queries
                 and Flexbox curently and Grid
 
 Planned responsiveness page update:
-- index (going to add a grid display)
+- index (going to add a grid display soon)
