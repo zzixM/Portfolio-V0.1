@@ -10,6 +10,21 @@
 
     <div class="flex-container">    
         <div class="title-header">
+            <!-- Logo art :) -->
+            <div class="logo-flex-con">
+                <div class="logo-grid-con-super">
+                    <div class="item red"></div>
+                    <div class="item white" id="w1"></div>
+                    <div class="item white" id="w2"></div>
+                    <div class="item white" id="w3"></div>
+                    <div class="blue"></div>
+                    <div class="item white" id="w4"></div>
+                    <div class="item white" id="w5"></div>
+                    <div class="yellow"></div>
+                    <div class="black"></div>
+                </div>
+            </div>
+            
             <h1>Bailey Ross-Wray's Porfolio</h1>
             <p>
                 Take a look at my work bellow
@@ -60,6 +75,55 @@
         .title-header{
             text-align: center;
         }
+        .logo-flex-con{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo-grid-con-super{
+        width: 74.8px;
+            height: 74.6px;
+            display: grid;
+            grid-template-columns: 32.0px 19.8px 15.3px 5.0px;
+            grid-template-rows: 41.4px 13.0px 15.5px 2.0px;
+            gap: 0.9px;
+            background-color: #232629;
+            border: 2.0px solid burlywood;
+        }
+        .red{
+            background-color: #E72F24;
+        }
+        .blue{
+            background-color: #004592;
+        }
+        .yellow{
+            background-color: #F9D01E;
+        }
+        .black{
+            background-color: #232629;
+        }
+        .white{
+            background-color: #F0F1EC;
+        }
+        #w1{
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }   
+        #w2{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        #w3{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }   
+        #w4{
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+
         .flex-container{
             display: flex;
             flex-direction: column;
