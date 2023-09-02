@@ -6,100 +6,108 @@
     <title>Bailey's Porfolio</title>
 </head>
 <body>
-    <div class="content-wrapper">
-        <div class="title-wrapper">
-            <H1>Bailey Ross-Wray's Porfolio</H1>
+
+
+    <div class="flex-container">    
+        <div class="title-header">
+            <h1>Bailey Ross-Wray's Porfolio</h1>
             <p>
                 Take a look at my work bellow
-                <br />Please note: the site is not yet designed to scale completely with
-                mobile device screens
             </p>
-            <hr width="500"/>
+            <hr width="50%"/>
         </div>
 
-        <div class="project-display-wrapper">
-            <table id="project-table">
-                <tr>
-                    <td><H2>Prodject Awack</H2></td>
-                    <td id="project-table-row-one-entry-two"><h2>About Page</h2></td>
-                </tr>
-                <tr>
-                    <td><a href="./public/awack-prodject.html">
-                        <img src="./assets/images/awack-help-menu.png" alt="Prodject Awack - Image" width="200"
-                        height="200">
-                    </a></td>
-                    <td id="project-table-row-two-entry-two"><a href="./public/about.html">
-                        <img src="./assets/images/about-me.png" alt="About Me - Image" width="200"height="200"></a>
-                    </a></td>
-                </tr>
-                <tr>
-                    <td><h2>Pricing Table</h2></td>
-                    <td id="project-table-row-three-entry-two"><h2>Password Generate Prodject</h2></td>
-                </tr>
-                <tr>
-                    <td><a href="./public/pricing-table.html">
-                        <img src="./assets/images/pricing-table.png" alt="Pricing Table - Image" width="200" height="200">
-                    </a></td>
-                    <td id="project-table-row-four-entry-two"><a href="./public/password-gen-prodject.html">
-                        <img src="./assets/images/account-tool-menu.png" alt="Account Tool - Image" width="200" height="200">
-                    </a></td>
-                </tr>
-            </table>
-            <hr width="500"/>
+        <div class="grid-container">
+        
+            <div class="project row-1-column-1">
+                <H2>Prodject Awack</H2>
+                <a href="../public/awack-prodject.html">
+                    <img src="../assets/images/awack-help-menu.png" alt="Prodject Awack - Image" width="200"
+                    height="200"></a>
+            </div>
+            <div class="project row-1-column-2">
+                <h2>About Page</h2>
+                <a href="../public/about.html">
+                    <img src="../assets/images/about-me.png" alt="About Me - Image" width="200"
+                    height="200"></a>
+            </div>
+            <div class="project row-2-column-1">
+                <h2>Pricing Table</h2>
+                <a href="../public/pricing-table.html">
+                    <img src="../assets/images/pricing-table.png" alt="Pricing Table - Image" width="200" 
+                    height="200"></a>
+            </div>
+            <div class="project row-2-column-2">
+                <h2>Password Generate Prodject</h2>
+                <a href="../public/password-gen-prodject.html">
+                    <img src="../assets/images/account-tool-menu.png" alt="Account Tool - Image" width="200" 
+                    height="200"></a>
+                    
+            </div>
+            
         </div>
+        
+            <div class="foot"><hr width="100%"/>
+                <h2 ><a id="contact-me" href="../public/contact.html">Contact me here</a></h2>
+            </div>
     </div>
-    <style>
-        .content-wrapper{
+
+
+
+    <style>        
+    
+
+        .title-header{
             text-align: center;
         }
-
-        h1{
-            text-decoration: underline;
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
         }
-
-        h2{
-            text-decoration: underline;
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+            place-items: center;
+            width: 820px;
         }
-
-        #project-table{
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        #project-table-row-one-entry-two{
-            padding-left: 100px;
-        }
-
-        #project-table-row-two-entry-two{
-            padding-left: 100px;
-        } 
-
-        #project-table-row-three-entry-two{
-            padding-left: 100px;
-        }
-
-        #project-table-row-four-entry-two{
-            padding-left: 100px;
-        }
-
-        #footer-contact-me{
+        .project{
             text-align: center;
-            padding-top: 100px;
+            width: 350px;
+            height: 350px;
         }
-
-        a{
-            color: black;
-        }
-
-        #footer-contact-me{
-            font-size: 1.5rem;
+        @media (max-width: 650px) {
+            .flex-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100vw;
+                height: 100%;
+            }
+            .grid-container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+            .project{
+            text-align: center;
+            flex: 1;
+            }
+            #contact-me{
+                color: black;
+                text-align: center;
+            }
+            
         }
 
     </style>
-
-    <footer>
-        <p id="footer-contact-me"><a href="./public/contact.html">Contact me here</a></p>
-    </footer>
     
 </body>
 
