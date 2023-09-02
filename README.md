@@ -6,5 +6,5 @@ first attempts at making one look nice.
 all pages have been updated to scale with mobile screens. 
 
 Curent goal:
-responsiveness - I am learning Media queries 
-                and Flexbox curently and Grid.
+Bootstrap - I am learning bootstrap and will likely make
+            a webpage for this site using it.
