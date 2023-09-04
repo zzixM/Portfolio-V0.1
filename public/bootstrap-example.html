@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Example</title>
+    
+    <style>
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+    crossorigin="anonymous">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/images/car-front-fill.svg" alt="Logo - Image" height="20px">Drives & Walks</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Postcode/Zip" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Find</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+        <h1 class="display-4 fw-bold text-body-emphasis">Drives And Walks</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Need to walk the cutest member of your family but have other things to do? we can do it for you. Give us a call.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Contact us</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4">About us</button>
+            </div>
+        </div>
+        <div class="overflow-hidden" style="max-height: 30vh;">
+            <div class="container px-5">
+                <img src="../assets/images/dog.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Dog Box - Image" width="700" height="500" loading="lazy">
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="p-5 text-center bg-body-tertiary rounded-3">
+            <img src="../assets/images/puppy.jpeg" alt="Puppy - Image" width="250px" height="200px">
+            <h1 class="text-body-emphasis">Puppys Or Eldery</h1>
+            <p class="col-lg-8 mx-auto fs-5 text-muted">
+                We walk your dogs when you dont have to. Need to go away but cant take the pup? no problem we can care for your older or youngest pets.
+                Want your pet to have a nice adventure but have work that day? We take all of our pawed clients for magical hikes, mythical beach stroles and beautifl camping retreats.
+            </p>
+            <div class="d-inline-flex gap-2 mb-5">
+                <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button">
+                    About us
+                    <svg class="bi ms-2" width="24" height="24"><use xlink:href="#arrow-right-short"></use></svg>
+                </button>
+                <button class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button">
+                    Services
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/images/puppy.jpeg" alt="Pup - Image" width="100%" height="100%">
+                    <div class="container">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/images/dog.jpg" alt="Dog - Image" width="100%" height="100%">
+                    <div class="container">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/images/older-dog.jpeg" alt="Older Pup - Image" width="100%" height="100%" >
+                    <div class="container">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">Services</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    <img src="../assets/images/car-front-fill.svg" alt="Vet Pill - Image"
+                    width="30px" height="30">
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Long Walks</h3>
+                <p>Working from morning to evening? Leaving your home early in the day? Not had time to take the pets out? No problem we can take them for an adventure.</p>
+                <a href="#" class="icon-link">
+                    Get a hold of us
+                </a>
+                </div>
+            <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    <img src="../assets/images/capsule.svg" alt="Vet Pill - Image"
+                    width="30px" height="30">
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Vet Apointments</h3>
+                <p>Is your best friend feeling under the weather? do they need some checkups? We can wait for you with your fluffy friend.</p>
+                <a href="#" class="icon-link">
+                    Contact us
+                </a>
+                </div>
+            <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    <img src="../assets/images/house-door-fill.svg" alt="House - Image"
+                    width="30px" height="30">
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Pet Sitting</h3>
+                <p>Got a destination wedding planned but no one to look after the fluffy family members? Or are you going to see family for a while? no problem for us.</p>
+                <a href="#" class="icon-link">
+                    Get in Touch
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-5">
+        <div class="p-5 text-center bg-body-tertiary">
+            <div class="container py-5">
+                <h1 class="text-body-emphasis">About us</h1>
+                <p class="col-lg-8 mx-auto lead">
+                    We are pet enthusiasts with massive hearts and great pet toys. So we decided to create a company that works for your pets. 
+                    We was founded in 2023 by (Founder) to bring happy memories to your pets when you are busy. 
+                    We cater to dogs of all shapes and sizes colours and breeds. Your pup eat the lead? No problem.
+                    Your friend need lots of breaks. Not an issue for us. Your "baby" need specal walks. Just let us know.
+                    Does your pet not like other pets? We will walk them away from crowds.
+                    No pet is to complicated, exitable or sleepy we can walk them all.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Drives & Walks, Inc</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="#"><img src="../assets/images/instagram.svg" width="24px" height="24px" alt="Instagram Logo - Image"></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><img src="../assets/images/twitter.svg" width="24px" height="24px" alt="Instagram Logo - Image"></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><img src="../assets/images/facebook.svg" width="24px" height="24px" alt="Instagram Logo - Image"></a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
